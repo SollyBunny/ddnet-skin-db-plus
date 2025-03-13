@@ -1,0 +1,15 @@
+{
+	"skins": {
+		"zimnotsureaboutthis_kz": {
+			"not_round": true
+		},
+		"Body Control_KZ": {
+			"not_round": true
+		}
+	},
+	"filters": {
+		"name=*santa*": {
+			"santa": true
+		}
+	}
+}
