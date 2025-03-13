@@ -8,11 +8,11 @@ In the future sane will restrict a lot of skins, and some skins may have fixes.
 
 ## Usage
 
-`cl_skin_community_download_url dsdp.sollybunny.xyz/skins/`
+`cl_skin_community_download_url https://dsdp.sollybunny.xyz/skins/`
 
 By default this will have `sane` as the filter, but it can be changed by adding it to the url
 
-`cl_skin_community_download_url dsdp.sollybunny.xyz/skins/<filter>/`
+`cl_skin_community_download_url https://dsdp.sollybunny.xyz/skins/<filter>/`
 
 You can then toggle this using
 
@@ -64,3 +64,17 @@ Example: `sane&(name=*tuzi*|name=santa*)&!(pack=bronies)`
 | `bodypart` | Parts in this skin, always `full` |
 | `date` | The date this skin was created |
 | `version` | The version of the skin, always `tw-0.6` |
+
+## Hosting yourself
+
+```sh
+git clone --depth 1 https://github.com/SollyBunny/ddnet-skin-db-plus/
+cd ddnet-skin-db-plus
+npm i
+./index.js
+```
+
+```
+http_allow_insecure 1
+cl_skin_community_download_url http://localhost:8080/skins/`
+```
